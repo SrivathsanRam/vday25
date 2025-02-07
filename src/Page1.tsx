@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import black_guy  from './assets/red_blue_pill.jpg'
 
 export default function Page1() {
     const navigate = useNavigate();
@@ -26,6 +27,7 @@ export default function Page1() {
     };
 
     const handleYesClick = () => {
+        
         if (noCounter < 20) {
             navigate('/page3');
         }
@@ -40,8 +42,7 @@ export default function Page1() {
         <div>
             <h1>Hi bestie</h1>
             <p>Do you want to be my valentine?</p>  
-            <img src="src/assets/red_blue_pill.jpg" alt="black guy" style={{width: '90%', height: '80%', position:'absolute'}} />
-            
+            <img src={black_guy} alt="black guy" style={{width: '90%', height: '80%', position:'absolute'}} />
             {noCounter < 20 ?
                 <div style={{ display: 'flex', gap: '1rem' }}>
                     <button

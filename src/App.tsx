@@ -2,17 +2,17 @@
 import Page1 from './Page1';
 import Page2 from './Page2';
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Page1 />} />
         <Route path="/gotcha_ass" element={<Page2 />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
