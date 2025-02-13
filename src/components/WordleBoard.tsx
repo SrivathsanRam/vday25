@@ -23,7 +23,7 @@ const WordleBoard: React.FC<WordleBoardProps> = ({ handleWon }) => {
     if (hasWon) {
       handleWon();
     } else if (realGuesses.length >= 6) {
-      alert("Stupid ass dont even know how to do worlde");
+      alert("do wordle w me allll the time still cannot solve smh");
       window.location.reload();
     }
   }, [guesses, solution]);

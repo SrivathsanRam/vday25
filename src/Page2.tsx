@@ -75,14 +75,18 @@ const Page2 = () => {
           
         </p>
         <p>
-          I promise to spend every single valentines day following this with him and only him.
+          I also attest I want to spend every single valentines day following this with him and only him.
         </p>
         
       </dialog>
 
       
     </div>
-    <button disabled={!isChecked} onClick={() => navigate("/mhmm_keep_going")}>Submit</button>
+    <button disabled={!isChecked} onClick={() => {
+      alert("your hint is the first two digits of the year of our anniv x100")
+      navigate("/mhmm_keep_going")
+
+    }}>Submit</button>
     </>
   )
 }

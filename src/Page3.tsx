@@ -12,8 +12,8 @@ const Page3 = () => {
   }
   useEffect(()=>{
     if (won){
-    alert('You have 3 seconds to remember the word');
-    setTimeout(() => navigate('/yea_almost_there'), 3000);
+    alert('YAY Yipeeee!!! You wonnnnn! Be sure to remember the word for later');
+    setTimeout(() => navigate('/yea_almost_there'), 50);
   }
   },[won]
   )
@@ -21,7 +21,8 @@ const Page3 = () => {
   return (
     <>
       <div>
-        <h2>Wordle Time</h2>
+        <h2>Wordle Time (6 letters)</h2>
+        <h3>eh btw u need to click on the top left square to start</h3>
         
       </div>
       <WordleBoard handleWon={handleWon}/>
