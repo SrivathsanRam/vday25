@@ -9,7 +9,7 @@ export default function Maze() {
   const playerSize = 50;
   const navigate = useNavigate();
   const [player, setPlayer] = useState({ x: 0, y: 0 });
-  const [obstacles, setObsctacles] = useState([
+  const obstacles = [
     { x: 50, y: 0, width: 150, height: 50 },
     { x: 300, y: 50, width: 75, height: 125 },
     { x: 550, y: 150, width: 125, height: 50 },
@@ -32,9 +32,7 @@ export default function Maze() {
     { x: 750, y: 0, width: 75, height: 125 },
     { x: 950, y: 200, width: 150, height: 50 },
     { x: 1150, y: 50, width: 50, height: 100 }
-]
-
-);
+  ];
   
   const speed = 10;
 

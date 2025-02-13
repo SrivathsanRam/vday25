@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Page6 = () => {
   const [topText, setTopText] = useState('You\'ve made it this far...');
   const [visible, setVisible] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
+  let isCorrect = false;
   const navigate = useNavigate();
 
   useEffect(() => {
